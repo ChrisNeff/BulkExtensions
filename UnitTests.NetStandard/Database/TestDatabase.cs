@@ -18,10 +18,8 @@ namespace UnitTests.NetStandard.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-//            optionsBuilder.UseSqlServer(
-//                @"Data Source=tcp:192.168.0.142,1433;Initial Catalog=UnitTests;User ID=sa;Password=sa;");
             optionsBuilder.UseSqlServer(
-                @"Data Source=tcp:10.0.0.192,1433;Initial Catalog=UnitTests;User ID=sa;Password=sa;");
+                @"data source=(localdb)\MSSQLLocalDB; Integrated Security=SSPI; initial catalog=BulkExtensions_UnitTests");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

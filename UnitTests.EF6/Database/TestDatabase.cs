@@ -7,7 +7,7 @@ namespace UnitTests.EF6.Database
     public class TestDatabase : DbContext
     {
 
-        public TestDatabase() : base("TestDatabaseLocal")
+        public TestDatabase() : base("TestDatabaseLocalDB")
         {
         }
         
